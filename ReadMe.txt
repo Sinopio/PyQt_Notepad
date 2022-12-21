@@ -2,4 +2,6 @@
 PyQt5 Version: 5.15.7로 제작하였습니다.
 GUI는 Qt Designer로 제작하였습니다.
 
+Git link : https://github.com/Sinopio/PyQt_Notepad.git
+
 감사합니다.
