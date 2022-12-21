@@ -1,0 +1,313 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ui version="4.0">
+ <class>MainWindow</class>
+ <widget class="QMainWindow" name="MainWindow">
+  <property name="geometry">
+   <rect>
+    <x>0</x>
+    <y>0</y>
+    <width>597</width>
+    <height>748</height>
+   </rect>
+  </property>
+  <property name="windowTitle">
+   <string>Notepad</string>
+  </property>
+  <widget class="QWidget" name="centralwidget">
+   <layout class="QGridLayout" name="gridLayout">
+    <property name="leftMargin">
+     <number>0</number>
+    </property>
+    <property name="topMargin">
+     <number>0</number>
+    </property>
+    <property name="rightMargin">
+     <number>0</number>
+    </property>
+    <property name="bottomMargin">
+     <number>0</number>
+    </property>
+    <item row="0" column="0">
+     <layout class="QGridLayout" name="gridLayout_2">
+      <item row="0" column="0">
+       <widget class="QTextEdit" name="Text_Plane"/>
+      </item>
+      <item row="0" column="1">
+       <widget class="QScrollBar" name="verticalScrollBar">
+        <property name="orientation">
+         <enum>Qt::Vertical</enum>
+        </property>
+       </widget>
+      </item>
+     </layout>
+    </item>
+   </layout>
+  </widget>
+  <widget class="QMenuBar" name="menubar">
+   <property name="geometry">
+    <rect>
+     <x>0</x>
+     <y>0</y>
+     <width>597</width>
+     <height>21</height>
+    </rect>
+   </property>
+   <widget class="QMenu" name="menu_File">
+    <property name="title">
+     <string>파일(F)</string>
+    </property>
+    <addaction name="action_New_FIle"/>
+    <addaction name="action_Open"/>
+    <addaction name="action_Save"/>
+    <addaction name="action_Save_As_New"/>
+    <addaction name="separator"/>
+    <addaction name="action_Close"/>
+   </widget>
+   <widget class="QMenu" name="menu_Edit">
+    <property name="title">
+     <string>편집(E)</string>
+    </property>
+    <addaction name="action_Undo"/>
+    <addaction name="separator"/>
+    <addaction name="action_Cut"/>
+    <addaction name="action_Copy"/>
+    <addaction name="action_Paste"/>
+    <addaction name="action_Del"/>
+    <addaction name="separator"/>
+    <addaction name="action_Find"/>
+    <addaction name="action_Replace"/>
+    <addaction name="separator"/>
+    <addaction name="action_Select_All"/>
+    <addaction name="action_Day_Time"/>
+   </widget>
+   <widget class="QMenu" name="menu_Form">
+    <property name="title">
+     <string>서식(O)</string>
+    </property>
+    <addaction name="action_Auto_Line"/>
+    <addaction name="action_Word_Format"/>
+   </widget>
+   <widget class="QMenu" name="menu_View">
+    <property name="title">
+     <string>보기(V)</string>
+    </property>
+    <widget class="QMenu" name="menu">
+     <property name="title">
+      <string>확대하기/축소하기</string>
+     </property>
+     <addaction name="action_Zoom_In"/>
+     <addaction name="action_Zoom_Out"/>
+    </widget>
+    <addaction name="menu"/>
+    <addaction name="action_State"/>
+   </widget>
+   <widget class="QMenu" name="menu_Help">
+    <property name="title">
+     <string>도움말(H)</string>
+    </property>
+    <addaction name="action_See_Help"/>
+    <addaction name="action_Send_Feedback"/>
+    <addaction name="separator"/>
+    <addaction name="action_Info"/>
+   </widget>
+   <addaction name="menu_File"/>
+   <addaction name="menu_Edit"/>
+   <addaction name="menu_Form"/>
+   <addaction name="menu_View"/>
+   <addaction name="menu_Help"/>
+  </widget>
+  <widget class="QStatusBar" name="statusbar"/>
+  <action name="action_New_FIle">
+   <property name="text">
+    <string>새로 만들기(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+N</string>
+   </property>
+  </action>
+  <action name="action_New_Window">
+   <property name="text">
+    <string>새 창(W)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+N</string>
+   </property>
+  </action>
+  <action name="action_Open">
+   <property name="text">
+    <string>열기(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+O</string>
+   </property>
+  </action>
+  <action name="action_Save">
+   <property name="text">
+    <string>저장(S)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+S</string>
+   </property>
+  </action>
+  <action name="action_Save_As_New">
+   <property name="text">
+    <string>다른 이름으로 저장(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Shift+S</string>
+   </property>
+  </action>
+  <action name="action_Undo">
+   <property name="text">
+    <string>실행 취소(U)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+Z</string>
+   </property>
+  </action>
+  <action name="action_Cut">
+   <property name="text">
+    <string>잘라내기(T)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+X</string>
+   </property>
+  </action>
+  <action name="action_Copy">
+   <property name="text">
+    <string>복사(C)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+C</string>
+   </property>
+  </action>
+  <action name="action_Paste">
+   <property name="text">
+    <string>붙여넣기(P)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+V</string>
+   </property>
+  </action>
+  <action name="action_Del">
+   <property name="text">
+    <string>삭제(L)</string>
+   </property>
+   <property name="shortcut">
+    <string>Del</string>
+   </property>
+  </action>
+  <action name="action_Find">
+   <property name="text">
+    <string>찾기(F)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+F</string>
+   </property>
+  </action>
+  <action name="action_Next_Find">
+   <property name="text">
+    <string>다음 찾기(N)</string>
+   </property>
+   <property name="shortcut">
+    <string>F3</string>
+   </property>
+  </action>
+  <action name="action_Prev_Find">
+   <property name="text">
+    <string>이전 찾기(V)</string>
+   </property>
+   <property name="shortcut">
+    <string>Shift+F3</string>
+   </property>
+  </action>
+  <action name="action_Replace">
+   <property name="text">
+    <string>바꾸기(R)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+H</string>
+   </property>
+  </action>
+  <action name="action_Move">
+   <property name="text">
+    <string>이동(G)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+G</string>
+   </property>
+  </action>
+  <action name="action_Select_All">
+   <property name="text">
+    <string>모두 선택(A)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+A</string>
+   </property>
+  </action>
+  <action name="action_Day_Time">
+   <property name="text">
+    <string>시간/날짜(D)</string>
+   </property>
+   <property name="shortcut">
+    <string>F5</string>
+   </property>
+  </action>
+  <action name="action_Auto_Line">
+   <property name="checkable">
+    <bool>true</bool>
+   </property>
+   <property name="text">
+    <string>자동 줄 바꿈(W)</string>
+   </property>
+  </action>
+  <action name="action_Word_Format">
+   <property name="text">
+    <string>글꼴(F)</string>
+   </property>
+  </action>
+  <action name="action_State">
+   <property name="text">
+    <string>상태 표시줄(S)</string>
+   </property>
+  </action>
+  <action name="action_See_Help">
+   <property name="text">
+    <string>도움말 보기(H)</string>
+   </property>
+  </action>
+  <action name="action_Send_Feedback">
+   <property name="text">
+    <string>피드백 보내기(F)</string>
+   </property>
+  </action>
+  <action name="action_Info">
+   <property name="text">
+    <string>메모장 정보(A)</string>
+   </property>
+  </action>
+  <action name="action_Close">
+   <property name="text">
+    <string>끝내기(X)</string>
+   </property>
+  </action>
+  <action name="action_Zoom_In">
+   <property name="text">
+    <string>확대하기(I)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl++</string>
+   </property>
+  </action>
+  <action name="action_Zoom_Out">
+   <property name="text">
+    <string>축소하기(O)</string>
+   </property>
+   <property name="shortcut">
+    <string>Ctrl+-</string>
+   </property>
+  </action>
+ </widget>
+ <resources/>
+ <connections/>
+</ui>
